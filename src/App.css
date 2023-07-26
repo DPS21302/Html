@@ -39,143 +39,24 @@
 
 
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
-/* index.css  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
 :root{
-   --main-color: #10721889;
+   --main-color: #308025;
    --red:#e74c3c;
    --orange:#f39c12;
    --light-color:#888;
    --light-bg:#eee;
+   --light-dark: #eee;
    --black:#2c3e50;
    --even:#000000;
    --leader: #fff;
    --white:#fff;
    --border:.1rem solid rgba(0,0,0,.2);
 }
-body {
-   margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-     sans-serif;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
- }
- 
- code {
-   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-     monospace;
- }
- 
- /*TextSphere CSS Code */
- 
- /* Importing google font  */
- 
- /* :root{
-   --light-dark: black;
-   background-color: white;
-   /* --light-mode:#202020; 
- 
- } */
- 
- .text-sphere {
-     position: relative;
-     top: 0;
-     width: 100%;
-     height: 100vh;
- 
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     /* background: #1e1e1e; */
-     border-radius: 4rem;
-     box-shadow: 0rem .5rem 40rem .1rem inset var(--light-dark);
- }
- body.dark{
-   --light-dark: #eeeeee;
-   background-color: black;
-   /* --light-mode: #308025; */
- }
- .tagcloud {
-     display:inline;
-     top: 0;
-     left: 0;
-     
-     font-family: 'Inter', sans-serif;
-     font-weight: 600;
-     letter-spacing: 0.0625em;
-     font-size: 1.3em;
-     border-radius: .1rem;
-     box-shadow: .6rem 1.0rem 19.0rem .1rem inset #202020;
-     /* var(--light-mode); */
-     
- }
- 
- /* Change color of each text in sphere on hover   */
- .tagcloud--item {
-     background: linear- gradient (135deg,rgba(255,255,255,0.1) rgba(255,255,255,0));
-     backdrop-filter: blur(2.0rem);
-     -webkit-backdrop•filter: blur(4.0rem);
-     border-radius: 1.3rem;
-     border: 0..5rem solid rgb(69, 19, 19);
-     box-shadow: .0rem .4rem 1.0rem .0rem rgba(0,0,0,0.37);
-     padding: .4rem .6rem .4rem .8rem;
-     color: rgb(255, 0, 144);
-     /* text-transform: lowercase; */
- }
- 
- .tagcloud--item:hover {
-     color: #7e4a93;
- }
- 
- ul#tabs {
-   list-style-type: none;
-   padding: 3rem 3rem 3rem 3rem;
-   text-align: center;
-   list-style-type: none;
-   margin: 0;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   padding: 1rem 1rem;
- flex-wrap: wrap; 
- 
- }
- ul#tabs li {
-   display: inline-block;
-   background-color: var(--white);
-   /* border-bottom: solid 5px rgb(37, 69, 128); */
-   padding: .5rem 2.0rem;
-   margin-bottom: -1.0rem;
-   color: #fff;
-   cursor: pointer;
-   width: 16rem;
-   height:4rem;
-   font-size:1.9rem;
-   margin-bottom: 1rem;
-   color: var(--black);
-   border-radius: 6rem;
- }
- ul#tabs li:hover {
-   background-color:var(--main-color);
-   color: white
- }
- ul#tabs li.active {
-   background-color:var(--main-color);
-   color: white
- }
- 
- ul#tab li {
-   display: none;
- }
- ul#tab li.active {
-   display: block;
- }
- 
+
 *{
    font-family: 'Nunito', sans-serif;
    margin:0; padding:0;
@@ -209,8 +90,19 @@ html::-webkit-scrollbar-thumb{
 
 body{
    background-color: var(--light-bg);
-   padding-left: 30rem;
+   padding-left: 20rem;
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+     sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+     monospace;
+ }
 
 body.dark{
    --light-color:#aaa;
@@ -226,10 +118,7 @@ body.dark{
 body.active{
    padding-left: 0;
 }
-input[disabled] {
-   cursor: not-allowed;
- }
- 
+
 section{
    padding:2rem 4.1rem 2rem 4.1rem;
    margin: 0 auto;
@@ -424,7 +313,7 @@ section{
 .side-bar{
    position: fixed;
    top: 0; left: 0;
-   width: 30rem;
+   width: 20rem;
    background-color: var(--white);
    height: 100vh;
    border-right: var(--border);
@@ -487,16 +376,13 @@ section{
 }
 
 .side-bar .navbar a i{
-   margin-right: 2.5rem;
+   margin-right: 1.5rem;
    color:var(--main-color);
    transition: .2s linear;
-   padding-left: 2rem;
 }
 
 .side-bar .navbar a span{
    color:var(--light-color);
-   letter-spacing: 0.1rem;
-   
 }
 
 .side-bar .navbar a:hover{
@@ -582,12 +468,7 @@ section{
 .home-grid .box-container .likes span{
    color:var(--main-color);
 }
-.fa-question:before {
-   padding-right: 1.3rem;
-}
-.fa-headset:before {
-   padding-right: 0.5rem;
-}
+
 .about .row{
    display: flex;
    align-items: center;
@@ -750,19 +631,19 @@ section{
 
 .courses .box-container .box .thumb span{
    position: absolute;
-   top:1rem; left: 1rem;
-   border-radius: .5rem;
-   padding: .5rem 1.5rem;
+   top:0.8rem; left: 1rem;
+   border-radius: 5rem;
+   padding: .4rem .5rem;
    background-color: rgba(0,0,0,.3);
    color: #fff;
-   font-size: 1.5rem;
+   font-size: 1rem;
 }
 
 .courses .box-container .box .thumb img{
    width: 100%;
    height: 20rem;
    object-fit: cover;
-   border-radius: .5rem;
+   border-radius: 2.5rem;
 }
 
 .courses .box-container .box .title{
@@ -829,12 +710,12 @@ section{
 }
 
 .playlist-details .row .column .thumb span{
-   font-size: 1.8rem;
+   font-size: 1rem;
    color: #fff;
    background-color: rgba(0,0,0,.3);
-   border-radius: .5rem;
+   border-radius: 5rem;
    position: absolute;
-   top: 1rem; left: 1rem;
+   top: 0.8rem; left: 1rem;
    padding: .5rem 1.5rem;
 }
 
@@ -842,7 +723,7 @@ section{
    height: 30rem;
    width: 100%;
    object-fit: cover;
-   border-radius: .5rem;
+   border-radius: 3rem;
 }
 
 .playlist-details .row .column .tutor{
@@ -1431,47 +1312,39 @@ section{
    text-decoration: underline;
    color:var(--black);
 }
-.form-container {
+
+.form-container{
    min-height: calc(100vh - 20rem);
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.form-container .image {
-   height: 10rem;
-   width: 10rem;
-   border-radius: 50%;
-   object-fit: contain;
-   margin-bottom: 1rem;
-}
-
-.form-container form {
+.form-container form{
    background-color: var(--white);
    border-radius: 4rem;
    padding: 2rem;
    width: 50rem;
-   flex-direction: column;
 }
 
-.form-container form h3 {
+.form-container form h3{
    font-size: 2.5rem;
    text-transform: capitalize;
    color: var(--black);
    text-align: center;
 }
 
-.form-container form p {
+.form-container form p{
    font-size: 1.7rem;
    color: var(--light-color);
    padding-top: 1rem;
 }
 
-.form-container form p span {
+.form-container form p span{
    color: var(--red);
 }
 
-.form-container form .box {
+.form-container form .box{
    font-size: 1.8rem;
    color: var(--black);
    border-radius: 4rem;
@@ -1479,159 +1352,15 @@ section{
    background-color: var(--light-bg);
    width: 100%;
    margin: 1rem 0;
+   cursor:  url('../src/components/images/nodrop.svg'),auto;
+}
+.box{
+   resize: none;
 }
 
-/* Add this CSS inside the .update class */
 
-.update .form-container .form-row {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 1rem;
- }
- 
- .update .form-container form .box.left-field {
-   width: 48%;
- }
- 
- .update .form-container form .box.right-field {
-   width: 48%;
- }
- .form-container form .box[type="number"]::-webkit-inner-spin-button,
-.form-container form .box[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
- .update .form-container form {
-   background-color: var(--white);
-   border-radius: 4rem;
-   padding: 2rem;
-   width: 100rem;
-   flex-direction: column;
-   margin: 0 auto;
- }
- 
- .update .form-container form .box {
-   border-bottom: 0.2rem solid var(--light-color);
-   padding: 1.4rem;
-   background-color: var(--light-bg);
-   width: 100%;
-   margin: 1rem 0;
-   position: relative;
-    /* Add this to create space for label outside the container */
- }
- 
- .update .form-container form .box p {
-   position: absolute;
-   left: 1.6rem;
-   top: -1.5rem;
-   font-size: 1.2rem;
-   color: var(--black);
-   background-color: var(--white);
-   padding: 0 0.5rem;
- }
- 
- .update .form-container form .box.left-field p {
-   top: -3rem;
- }
- 
- .update .form-container form .box.right-field p {
-   top: -3rem;
- }
- 
- .update textarea {
-   width: 100%;
-   height: 15rem;
-   border: none;
-   border-bottom: 0.2rem solid var(--light-color);
-   padding: 1.4rem;
-   background-color: var(--light-bg);
-   margin: 1rem 0;
- }
- 
- .update .selected-skills-container {
-   display: flex;
-   flex-wrap: wrap;
-   margin-top: 1rem;
- }
- 
- .update .selected-skill {
-   display: flex;
-   align-items: center;
-   background-color: var(--main-color);
-   border-radius: 0.4rem;
-   padding: 0.4rem 0.8rem;
-   margin: 0.4rem;
- }
- 
- .update .selected-skill span {
-   margin-right: 0.8rem;
- }
- 
- .update .selected-skill button {
-   background: none;
-   color: var(--leader);
-   border: none;
-   cursor: pointer;
- }
- 
- .update .skills-dropdown {
-   position: relative;
- }
- 
- .update .skills-options {
-   position: absolute;
-   top: 100%;
-   left: 0;
-   z-index: 1;
-   background-color: var(--main-color);
-   border: 0.1rem solid var(--main-color);
-   border-radius: 0.4rem;
-   max-height: 15rem;
-   overflow-y: auto;
-   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
- }
- 
- .update .skill-option {
-   padding: 0.8rem 1.6rem;
-   cursor: pointer;
- }
- .viewprofile .image {
-   height: 10rem;
-   width: 10rem;
-   border-radius: 50%;
-   object-fit: contain;
-   margin-bottom: 1rem;
- }
- 
- .viewprofile {
-   min-height: calc(100vh - 20rem);
-   margin-left: 20%;
-   max-width: 70rem;
-   background-color: var(--light-color);
-   color: var(--leader);
-   border-radius: 4rem;
-   padding: 2rem;
-   width: 100rem;
-   font-size: 1.5rem;
-   word-spacing: 0.4rem;
- }
- 
- .viewprofile .field-container {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 1rem;
-   margin-bottom: 1.5rem;
- }
- 
- .viewprofile .field-label {
-   font-weight: bold;
- }
- 
- .viewprofile .field-value {
-   margin-top: 0.5rem;
- }
- 
+
+
 
 .footer{
    background-color: var(--white);
@@ -1914,6 +1643,101 @@ section{
          border-bottom: 0;
        }
 
+       .text-shpere {
+         position: relative;
+         top: 0;
+         width: 100%;
+         height: 100vh;
+     
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: #1e1e1e;
+         border-radius: 4rem;
+         box-shadow: 0px 5px 400px 1px inset var(--light-dark);
+     }
+     body.dark{
+       --light-dark: #308025;
+       /* --light-mode: #308025; */
+     }
+     .tagcloud {
+         display:inline;
+         top: 0;
+         left: 0;
+         
+         font-family: 'Inter', sans-serif;
+         font-weight: 600;
+         letter-spacing: 0.0625em;
+         font-size: 1.3em;
+         border-radius: 1px;
+         box-shadow: 6px 10px 190px 1px inset #202020;
+         /* var(--light-mode); */
+         
+     }
+     
+     /* Change color of each text in sphere on hover   */
+     .tagcloud--item {
+         background: linear- gradient (135deg,rgba(255,255,255,0.1) rgba(255,255,255,0));
+         backdrop-filter: blur(20px);
+         -webkit-backdrop•filter: blur(40px);
+         border-radius: 13px;
+         border: 0.5px solid rgb(69, 19, 19);
+         box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.37);
+         padding: 4px 6px 4px 8px;
+         color: rgb(255, 0, 144);
+         /* text-transform: lowercase; */
+     }
+     
+     .tagcloud--item:hover {
+         color: #7e4a93;
+     }
+     
+     ul#tabs {
+       list-style-type: none;
+       padding: 3rem 3rem 3rem 3rem;
+       text-align: center;
+       list-style-type: none;
+       margin: 0;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       padding: 10px 10px;
+     flex-wrap: wrap; 
+     
+     }
+     ul#tabs li {
+       display: inline-block;
+       background-color: var(--white);
+       /* border-bottom: solid 5px rgb(37, 69, 128); */
+       padding: 5px 20px;
+       margin-bottom: -10px;
+       color: #fff;
+       cursor: pointer;
+       width: 16rem;
+       height:4rem;
+       font-size:1.9rem;
+       margin-bottom: 1rem;
+       color: var(--black);
+       border-radius: 6rem;
+     
+       
+     }
+     ul#tabs li:hover {
+       background-color:rgb(48, 128, 37);
+       color: white
+     }
+     ul#tabs li.active {
+       background-color:rgb(48, 128, 37);
+       color: white
+     }
+     
+     ul#tab li {
+       display: none;
+     }
+     ul#tab li.active {
+       display: block;
+     }
+
        /* @media (max-width: 740px) {
          * {
            font-size: 70%;
@@ -1944,7 +1768,7 @@ section{
    }
 
    .side-bar{
-      left: -100rem;
+      left: -30rem;
       transition: .2s linear;
    }
 
@@ -1994,24 +1818,7 @@ section{
 }
 
 @media (max-width:450px){
-   .side-bar{
-      background-color: rgba(0, 0, 0, 0.7);
-      width:100%;
-   }
-   .side-bar.active {
-      .courses{
-         backdrop-filter: blur(50rem);
-      }
-      
-      /* Additional styles to make the glass effect take up the full screen */
-     
-      /* background-color: rgba(0,0,0,.7); */
-   }
-  
-   .side-bar .profile .image{
-      height: 10rem;
-      width: 10rem;
-   }
+
    html{
       font-size: 50%;
    }
