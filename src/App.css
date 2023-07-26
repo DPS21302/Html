@@ -1596,14 +1596,15 @@ section{
    padding: 0.8rem 1.6rem;
    cursor: pointer;
  }
-.viewprofile .image{
+ .viewprofile .image {
    height: 10rem;
    width: 10rem;
    border-radius: 50%;
    object-fit: contain;
    margin-bottom: 1rem;
-} 
-.viewprofile{
+ }
+ 
+ .viewprofile {
    min-height: calc(100vh - 20rem);
    margin-left: 20%;
    max-width: 70rem;
@@ -1613,8 +1614,24 @@ section{
    padding: 2rem;
    width: 100rem;
    font-size: 1.5rem;
-   word-spacing: .4rem;
-}
+   word-spacing: 0.4rem;
+ }
+ 
+ .viewprofile .field-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+   margin-bottom: 1.5rem;
+ }
+ 
+ .viewprofile .field-label {
+   font-weight: bold;
+ }
+ 
+ .viewprofile .field-value {
+   margin-top: 0.5rem;
+ }
+ 
 
 .footer{
    background-color: var(--white);
